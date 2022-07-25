@@ -1,0 +1,56 @@
+﻿<Window x:Class="Taschenrechner.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Taschenrechner"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Button Grid.Column="0" Content="7"   Grid.Row="1" Click="sieben" ></Button>
+        <Button Grid.Column="1" Content="8"  Grid.Row="1" Click="acht"/>
+        <Button Grid.Column="2" Content="9"  Grid.Row="1" Click="neun"/>
+        <Button Grid.Column="3" Content="/" Grid.Row="1" Click="geteilt"/>
+        <Button Grid.Column="0" Content="4" Grid.Row="2" Click="vier"/>
+        <Button Grid.Column="1" Content="5" Grid.Row="2" Click="fünf"/>
+        <Button Grid.Column="2" Content="6" Grid.Row="2" Click="sechs"/>
+        <Button Grid.Column="3" Content="*"  Grid.Row="2" Click="mal"/>
+        <Button Grid.Column="3" Content="-"  Grid.Row="3" Click="minus"/>
+        <Button Grid.Column="2" Content="3"  Grid.Row="3" Click="drei"/>
+        <Button Grid.Column="1" Content="2"  Grid.Row="3" Click="zwei"/>
+        <Button Grid.Column="0" Content="1" Grid.Row="3" Click="eins"/>
+        <Button Grid.Column="0"  Content="0" Grid.Row="4" Click="nullen" Grid.ColumnSpan="2"/>
+        <Button Grid.Column="2"  Content="=" Grid.Row="4" Click="ergebnis"/>
+        <Button Grid.Column="4"  Content="+" Grid.Row="4" Click="plus"/>
+        <TextBlock  Grid.ColumnSpan="4" x:Name="txtBlock" Text="0" FontSize="50" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </Grid>
+
+</Window>
